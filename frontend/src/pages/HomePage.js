@@ -1,10 +1,11 @@
 import { Link, useNavigate } from "react-router-dom";
+import PageContent from "../components/PageContent";
 
 function HomePage() {
-    const navigate = useNavigate()
 
-
-  return <h1>Home Page</h1>;
+  return<PageContent title="Welcome">
+    <p>Browse all our amazing events!</p>
+  </PageContent>
 }
 
 export default HomePage;
